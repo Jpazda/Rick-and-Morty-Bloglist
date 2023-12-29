@@ -1,0 +1,27 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+
+body {
+  background-color: #e8e9e9;
+}
+
+.button {
+  height: 75px;
+  width: 250px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
