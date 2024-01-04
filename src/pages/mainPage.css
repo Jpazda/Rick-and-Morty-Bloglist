@@ -1,27 +1,41 @@
 .main-page {
+  margin-top: 50px;
+}
+
+.characters {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 300px;
-}
-
-body {
-  background-color: #e8e9e9;
-}
-
-.button {
-  height: 75px;
-  width: 250px;
+  overflow-x: auto;
+  flex: nowrap;
+  gap: 30px;
+  padding: 40px 40px 40px 40px;
+  background-color: #42f56c;
+  border: 2px solid gray;
   margin-bottom: 50px;
-  font-size: 20px;
-  border: 3px solid black;
-  border-radius: 10px;
-  background: white;
-  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-.button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.characters .card {
+  flex: 0 0 auto;
+  height: 480px;
+}
+
+.characters::-webkit-scrollbar {
+  height: 10px;
+}
+
+.characters::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+.characters::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
 }
